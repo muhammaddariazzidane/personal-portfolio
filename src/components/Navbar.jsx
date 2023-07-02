@@ -3,9 +3,9 @@ import React from "react";
 export default function Navbar() {
   return (
     <>
-      <header className="p-4 px-12 lg:px-24 shadow">
+      <header className="p-4 px-10 lg:px-24 shadow">
         <div className="container flex justify-between h-10 mx-auto">
-          <div className="flex items-center p-2  text-xl">
+          <div className="flex items-center   text-xl">
             {/* <img className="lg:block hidden" src="/vite.svg" alt="" /> */}
             <span>Zidane</span>
           </div>

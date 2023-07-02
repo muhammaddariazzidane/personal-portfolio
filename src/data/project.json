@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Laravel-forum",
-    "description": "Andy shoes are designed to keeping in...",
+    "description": "This project was inspired by Stack Overflow. I then learned Laravel 9 and attempted to create a simple forum using several Laravel ecosystems, including Laravel, Breeze, Socialite, Scout, and third-party packages such as Laravel Turbolinks and Laravel Notify.",
     "image": "/forum.png",
     "link": "https://whyngebull.000webhostapp.com/",
     "repo": "",
@@ -11,8 +11,8 @@
   {
     "id": 2,
     "title": "Codeigniter-blog",
-    "description": "Andy shoes are designed to keeping in...",
-    "image": "/forum.png",
+    "description": "This is the result of learning CodeIgniter 4, a simple blog CMS application.",
+    "image": "/blog.png",
     "link": "https://muhammaddariazzidane-blog.000webhostapp.com/",
     "repo": "",
     "tech": ["/codeigniter_logo_icon_145394.svg", "/mysql.svg", "/tailwindcss_logo_icon_167923.svg"]

@@ -2,37 +2,45 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100">
-      <div className="flex flex-col justify-between">
-        <div className="space-y-2">
-          <h2 className="text-4xl font-bold leadi lg:text-5xl">Let's talk!</h2>
-          <div className="dark:text-gray-400">Vivamus in nisl metus? Phasellus.</div>
-        </div>
-        <img src="assets/svg/doodle.svg" alt="" className="p-6 h-52 md:h-64" />
+    <div className="mx-auto max-w-xl px-4 lg:mb-12 mb-6 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-lg">
+        <h1 className="text-center font-semibold text-4xl my-5 lg:mb-12">Contact me</h1>
+
+        <form action="" className="mb-0 mt-6 space-y-5  rounded-lg p-4 pt-12 shadow-lg shadow-slate-200 sm:p-6 ">
+          <div>
+            <label htmlFor="name" className="sr-only">
+              Name
+            </label>
+
+            <div className="">
+              <input type="text" className="w-full rounded-md border-indigo-400 focus:outline-indigo-500 border lg:p-4 p-3 text-sm shadow-sm" placeholder="Enter your name" />
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="email" className="sr-only">
+              Your email
+            </label>
+
+            <div className="">
+              <input type="email" className="w-full rounded-md border-indigo-400 focus:outline-indigo-500 border lg:p-4 p-3 text-sm shadow-sm" placeholder="Enter your email" />
+            </div>
+          </div>
+          <div>
+            <label htmlFor="email" className="sr-only">
+              Your email
+            </label>
+
+            <div className="">
+              <textarea name="" id="" cols="30" rows="5" placeholder="your message" className="w-full rounded-md border-indigo-400 focus:outline-indigo-500 border lg:p-4 p-3 text-sm shadow-sm"></textarea>{" "}
+            </div>
+          </div>
+
+          <button type="submit" className="block rounded-md mx-auto bg-indigo-600 lg:px-4 px-3 py-3 text-sm font-medium text-white">
+            Send message
+          </button>
+        </form>
       </div>
-      <form novalidate="" className="space-y-6">
-        <div>
-          <label for="name" className="text-sm">
-            Full name
-          </label>
-          <input id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800" />
-        </div>
-        <div>
-          <label for="email" className="text-sm">
-            Email
-          </label>
-          <input id="email" type="email" className="w-full p-3 rounded dark:bg-gray-800" />
-        </div>
-        <div>
-          <label for="message" className="text-sm">
-            Message
-          </label>
-          <textarea id="message" rows="3" className="w-full p-3 rounded dark:bg-gray-800"></textarea>
-        </div>
-        <button type="submit" className="w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-violet-400 dark:text-gray-900">
-          Send Message
-        </button>
-      </form>
     </div>
   );
 }

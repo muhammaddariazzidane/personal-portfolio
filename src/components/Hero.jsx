@@ -4,11 +4,11 @@ import { FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
 export default function Hero() {
   return (
     <>
-      <section className="flex gap-3 lg:flex-nowrap justify-between  flex-wrap py-12 px-12 lg:px-32 ">
+      <section className="flex gap-3 lg:flex-nowrap justify-center md:flex-nowrap flex-wrap md:py-12 py-6 px-12 lg:px-32 ">
         <div className="lg:w-1/2 w-full">
           <h1 className="lg:text-4xl text-4xl font-bold my-4">Hello There 👋</h1>
           <h3 className="font-semibold text-3xl ">I'm Muhammad Dariaz Zidane</h3>
-          <h5 className="my-7 text-gray-600 text-2xl">
+          <h5 className="my-7 text-gray-600 lg:text-2xl text-xl">
             <span className="text-indigo-600">Fullstack</span> Web Developer.
           </h5>
           <button className="p-2  mt-2 px-4 rounded-full bg-indigo-600 shadow-lg text-white transition-all duration-300 hover:bg-indigo-500">Let's get in touch</button>
@@ -24,8 +24,8 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="lg:w-1/2 w-full">
-          <img src="/Formal.png" alt="" className=" rounded-lg shadow-md  mx-auto" />
+        <div className="lg:w-1/2 w-full lg:block md:block hidden">
+          <img src="/Formal.png" alt="" className=" rounded-full object-cover w-64 lg:w-96 h-64 lg:h-96 lg:translate-x-10 shadow-md  mx-auto" />
         </div>
       </section>
       ;
