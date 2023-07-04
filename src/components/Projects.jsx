@@ -24,8 +24,6 @@ export default function Projects() {
     }
   }
 
-  console.log(projects);
-
   return (
     <div className="py-16">
       <h1 className="text-center font-semibold text-4xl my-5 mb-2">Recent's Projects</h1>
