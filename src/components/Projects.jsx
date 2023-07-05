@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { FaEye, FaGithub } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
 import projects from "../data/project.json";
 
@@ -49,13 +50,11 @@ export default function Projects() {
               </div>
             </div>
             {modal && selectedProject && (
-              <div className="fixed text-gray-500  flex items-center justify-center overflow-auto z-50 bg-black/40 backdrop-blur-sm left-0 right-0 top-0 bottom-0" ref={modalRef} onClick={handleModalClick}>
-                <div className="lg:max-w-2xl max-w-md gap-2 p-4 lg:p-6 relative mx-4 rounded-md shadow-md bg-white">
-                  <button onClick={closeModal} className="block">
-                    <GrClose size={19} className="absolute  lg:top-3 top-1 lg:right-4 right-2" />
-                  </button>
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <img alt="Gambar project" src={projects[selectedProject - 1].image} className=" shadow-md shadow-indigo-200 w-full mt-3 lg:mt-0 rounded-lg object-contain" />
+              <div className="fixed text-gray-500  flex items-center justify-center overflow-hidden z-50 bg-black/40  left-0 right-0 top-0 bottom-0" ref={modalRef} onClick={handleModalClick}>
+                <div className="lg:max-w-2xl max-h-full overflow-auto max-w-md gap-2 p-4 lg:p-6 relative m-4  rounded-md  bg-white">
+                  {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2"> */}
+                  <div className="grid grid-cols-1 gap-4">
+                    <img alt="Gambar project" src={projects[selectedProject - 1].image} className=" shadow-md shadow-indigo-200 w-full rounded-lg object-contain" />
                     <div>
                       <h2 className="text-xl text-black">{projects[selectedProject - 1].title}</h2>
                       <div className="flex items-center space-x-2 my-2">
@@ -71,13 +70,20 @@ export default function Projects() {
                       </div>
                       <p className=" text-sm text-gray-700">{projects[selectedProject - 1].description}</p>
 
-                      <div className="mt-6 flex justify-end space-x-1">
-                        <a href={projects[selectedProject - 1].repo} className="inline-block hover:bg-opacity-80 transition-all duration-300 rounded-full bg-gray-600 px-2 py-2 text-white">
-                          <FaGithub size={25} />
-                        </a>
-                        <a href={projects[selectedProject - 1].link} className="inline-block hover:bg-opacity-80 transition-all duration-300 items-center rounded-full bg-indigo-600 px-2  py-2  text-white">
-                          <FaEye size={25} />
-                        </a>
+                      <div className="mt-6 flex  justify-between space-x-1">
+                        <div>
+                          <button onClick={closeModal} type="button" className="inline-block hover:bg-opacity-80 transition-all duration-300 rounded-full text-red-600 shadow px-2 py-2 ">
+                            <AiOutlineClose size={25} />
+                          </button>
+                        </div>
+                        <div className="space-x-1">
+                          <a href={projects[selectedProject - 1].repo} className="inline-block hover:bg-opacity-80 transition-all duration-300 rounded-full bg-gray-600 px-2 py-2 text-white">
+                            <FaGithub size={25} />
+                          </a>
+                          <a href={projects[selectedProject - 1].link} className="inline-block hover:bg-opacity-80 transition-all duration-300 items-center rounded-full bg-indigo-600 px-2  py-2  text-white">
+                            <FaEye size={25} />
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
