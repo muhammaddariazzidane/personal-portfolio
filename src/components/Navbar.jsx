@@ -16,22 +16,22 @@ export default function Navbar() {
           </div>
           <ul className="items-stretch hidden space-x-3 md:flex">
             <li className="flex">
-              <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-violet-400 transition-all duration-300">
+              <a rel="noopener noreferrer" href="#" className="flex hover:bg-indigo-500 rounded-md items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-white transition-all duration-300">
                 Home
               </a>
             </li>
             <li className="flex">
-              <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-violet-400 transition-all duration-300">
+              <a rel="noopener noreferrer" href="#skills" className="flex hover:bg-indigo-500 rounded-md items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-white transition-all duration-300">
                 Skills
               </a>
             </li>
             <li className="flex">
-              <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-violet-400 transition-all duration-300">
+              <a rel="noopener noreferrer" href="#projects" className="flex hover:bg-indigo-500 rounded-md items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-white transition-all duration-300">
                 Projects
               </a>
             </li>
             <li className="flex">
-              <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-violet-400 transition-all duration-300">
+              <a rel="noopener noreferrer" href="#contact" className="flex hover:bg-indigo-500 rounded-md items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-white transition-all duration-300">
                 Contact
               </a>
             </li>
@@ -46,13 +46,13 @@ export default function Navbar() {
                   <a href="#">Home</a>
                 </li>
                 <li className="hover:text-white transition-all duration-300 rounded-md hover:shadow hover:bg-indigo-500 px-4 py-1">
-                  <a href="#">Skills</a>
+                  <a href="#skills">Skills</a>
                 </li>
                 <li className="hover:text-white transition-all duration-300 rounded-md hover:shadow hover:bg-indigo-500 px-4 py-1">
-                  <a href="#">Projects</a>
+                  <a href="#projects">Projects</a>
                 </li>
                 <li className="hover:text-white transition-all duration-300 rounded-md hover:shadow hover:bg-indigo-500 px-4 py-1">
-                  <a href="#">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>

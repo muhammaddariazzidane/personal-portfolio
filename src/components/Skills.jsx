@@ -5,8 +5,10 @@ import { SiJavascript, SiTailwindcss, SiPhp, SiCodeigniter } from "react-icons/s
 export default function Skills() {
   return (
     <>
-      <div className="px-12 lg:px-32">
-        <h1 className="text-center font-semibold text-4xl my-5 mb-7">My Skills</h1>
+      <div className="px-12 lg:px-32 pb-12  scroll-mb-96">
+        <h1 className="text-center font-semibold text-4xl my-5 lg:mb-14" id="skills">
+          My Skills
+        </h1>
         <div className="flex py-7 flex-wrap justify-center items-center space-x-2 gap-3">
           <div className="lg:w-1/6 sm:w-1/2 md:w-1/4 w-1/4 ">
             <div className="text-orange-600 flex justify-center ">

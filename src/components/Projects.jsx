@@ -27,10 +27,12 @@ export default function Projects() {
 
   return (
     <div className="py-16">
-      <h1 className="text-center font-semibold text-4xl my-5 mb-2">Recent's Projects</h1>
+      <h1 className="text-center font-semibold text-4xl my-5 mb-5" id="projects">
+        Recent's Projects
+      </h1>
       <section className="py-12 flex gap-4 lg:flex-nowrap justify-center  flex-wrap  px-12 lg:px-32">
         {projects.map((project) => (
-          <div className="lg:w-1/3 md:w-1/3 sm:w-1/2 mb-3  w-full shadow-md shadow-indigo-200" key={project.id}>
+          <div className="lg:w-1/3 md:w-1/3 sm:w-1/2 mb-3 rounded-md  w-full shadow-md shadow-indigo-200" key={project.id}>
             <div className="group relative block  rounded-md lg:my-0">
               <div className="relative">
                 <img alt="Developer" src={project.image} className="absolute rounded-md w-full object-cover " />
@@ -38,8 +40,8 @@ export default function Projects() {
 
               <div className="relative group-hover:bg-black/60 pb-10 rounded-md p-4 sm:p-6 lg:p-8">
                 <div className="">
-                  <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                    <div className=" lg:py-10 py-6 flex justify-center text-white">
+                  <div className="translate-y-8 transform opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                    <div className=" lg:py-8 py-8  flex justify-center text-white">
                       <button onClick={() => handleModal(project.id)} className="px-4 p-2 flex  items-center  rounded-full  bg-indigo-600 text-white">
                         Detail
                         <FaEye className="ml-1" />
