@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLaravel, FaHtml5, FaCss3, FaBootstrap, FaReact } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiPhp, SiCodeigniter } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiPhp, SiCodeigniter, SiMysql, SiAlpinedotjs } from "react-icons/si";
 
 export default function Skills() {
   return (
@@ -48,6 +48,16 @@ export default function Skills() {
           <div className="lg:w-1/6 sm:w-1/2 md:w-1/4 w-1/4 ">
             <div className="text-red-600 flex justify-center ">
               <FaLaravel size={60} />
+            </div>
+          </div>
+          <div className="lg:w-1/6 sm:w-1/2 md:w-1/4 w-1/4 ">
+            <div className="text-orange-600 flex justify-center ">
+              <SiMysql size={60} />
+            </div>
+          </div>
+          <div className="lg:w-1/6 sm:w-1/2 md:w-1/4 w-1/4 ">
+            <div className="text-gray-700 flex justify-center ">
+              <SiAlpinedotjs size={60} />
             </div>
           </div>
           <div className="lg:w-1/6 sm:w-1/2 md:w-1/4 w-1/4 ">

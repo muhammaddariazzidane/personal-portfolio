@@ -11,9 +11,11 @@ export default function Hero() {
           <h5 className="my-7 text-gray-600 lg:text-2xl text-xl">
             <span className="text-indigo-600">Fullstack</span> Web Developer.
           </h5>
-          <button className="p-2  mt-2 px-4 rounded-full bg-indigo-600 shadow-lg text-white transition-all duration-300 hover:bg-indigo-500">Let's get in touch</button>
+          <a href="#about" className="p-2  mt-2 px-4 rounded-full bg-indigo-600 shadow-lg text-white transition-all duration-300 hover:bg-indigo-500">
+            Let's get in touch
+          </a>
           <div className="flex mt-4 lb:mb-0 mb-4 space-x-2 items-center">
-            <a href="" target="_blank" className="p-2  transition-all duration-300 shadow-md text-red-600  rounded-full">
+            <a href="https://www.instagram.com/dzm416/" target="_blank" className="p-2  transition-all duration-300 shadow-md text-red-600  rounded-full">
               <FaInstagram size={25} />
             </a>
             <a href="https://github.com/muhammaddariazzidane" className="p-2  transition-all duration-300 shadow-md  text-gray-800  rounded-full">

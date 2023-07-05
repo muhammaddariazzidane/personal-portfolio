@@ -6,7 +6,7 @@ export default function Footer() {
     <section className="bg-white pb-3 pt-12">
       <div className="max-w-screen-xl px-4 py-5 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <div className="flex justify-center mt-3 space-x-4">
-          <a href="" target="_blank" className="p-2  transition-all duration-300  shadow-md text-red-600  rounded-full">
+          <a href="https://www.instagram.com/dzm416/" target="_blank" className="p-2  transition-all duration-300  shadow-md text-red-600  rounded-full">
             <FaInstagram size={30} />
           </a>
           <a href="https://github.com/muhammaddariazzidane" className="p-2  transition-all duration-300  shadow-md text-gray-800  rounded-full">
