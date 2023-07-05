@@ -41,7 +41,7 @@ export default function Projects() {
               <div className="relative group-hover:bg-black/60 pb-10 rounded-md p-4 sm:p-6 lg:p-8">
                 <div className="">
                   <div className="translate-y-8 transform opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                    <div className=" lg:py-8 py-8  flex justify-center text-white">
+                    <div className=" lg:py-9 py-8  flex justify-center text-white">
                       <button onClick={() => handleModal(project.id)} className="px-4 p-2 flex  items-center  rounded-full  bg-indigo-600 text-white">
                         Detail
                         <FaEye className="ml-1" />
