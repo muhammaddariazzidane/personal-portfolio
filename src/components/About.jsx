@@ -4,7 +4,7 @@ import { HiMail } from "react-icons/hi";
 export default function About() {
   return (
     <div className="lg:py-12 md:py-12 px-10 lg:px-32">
-      <h1 className="text-center font-semibold text-4xl mt-5  " id="about">
+      <h1 className="text-center font-semibold text-4xl mt-14 lg:mt-6 " id="about">
         About me
       </h1>
       <div className="flex justify-center space-x-4  flex-wrap gap-4 py-12">
