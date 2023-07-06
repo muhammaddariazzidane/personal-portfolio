@@ -5,6 +5,8 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import About from "../components/About";
+import Certificate from "../components/Certificate";
+import sertifikat from "../data/serti.json";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Certificate sertifikat={sertifikat} />
         <Contact />
       </Layout>
     </>

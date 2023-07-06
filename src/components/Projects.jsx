@@ -52,7 +52,7 @@ export default function Projects() {
               </div>
             </div>
             {modal && selectedProject && (
-              <div className="fixed text-gray-500  flex items-center justify-center overflow-hidden z-50 bg-black/40  left-0 right-0 top-0 bottom-0" ref={modalRef} onClick={handleModalClick}>
+              <div className="fixed text-gray-500  flex items-center justify-center overflow-hidden z-[9999] backdrop-blur-sm bg-black/40  left-0 right-0 top-0 bottom-0" ref={modalRef} onClick={handleModalClick}>
                 <div className="lg:max-w-2xl max-h-full overflow-auto max-w-md gap-2 p-4 lg:p-6 relative m-4  rounded-md  bg-white">
                   {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2"> */}
                   <div className="grid grid-cols-1 gap-4">
