@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import NavItem from "./NavItem";
 
 export default function Navbar() {
   const [smallMenu, setSmallMenu] = useState(false);
@@ -7,52 +8,32 @@ export default function Navbar() {
   const handleSmallMenu = () => {
     setSmallMenu(!smallMenu);
   };
+
   return (
     <>
       <header className="p-4 px-10 lg:px-24 shadow">
         <div className="container flex justify-between h-10 mx-auto">
-          <div className="flex items-center   text-xl">
-            {/* <img className="lg:block hidden" src="/vite.svg" alt="" /> */}
-            <span>Zidane</span>
+          <div className="flex items-center text-xl">
+            <span className="font-semibold">Zidane</span>
           </div>
           <ul className="items-stretch hidden space-x-3 md:flex">
-            <li className="flex">
-              <a rel="noopener noreferrer" href="#" className="flex hover:bg-indigo-500 rounded-md items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-white transition-all duration-300">
-                Home
-              </a>
-            </li>
-            <li className="flex">
-              <a rel="noopener noreferrer" href="#skills" className="flex hover:bg-indigo-500 rounded-md items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-white transition-all duration-300">
-                Skills
-              </a>
-            </li>
-            <li className="flex">
-              <a rel="noopener noreferrer" href="#projects" className="flex hover:bg-indigo-500 rounded-md items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-white transition-all duration-300">
-                Projects
-              </a>
-            </li>
-            <li className="flex">
-              <a rel="noopener noreferrer" href="#contact" className="flex hover:bg-indigo-500 rounded-md items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-white transition-all duration-300">
-                Contact
-              </a>
-            </li>
+            <NavItem href="#" label="Home" />
+            <NavItem href="#skills" label="Skills" />
+            <NavItem href="#projects" label="Projects" />
+            <NavItem href="#contact" label="Contact" />
           </ul>
-          <button className="flex justify-end  items-center lg:hidden relative" onClick={handleSmallMenu}>
+          <button className="flex justify-end items-center lg:hidden relative" onClick={handleSmallMenu}>
             {smallMenu ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
-            <div className={`absolute top-10 shadow-md rounded-tl-lg rounded-bl-lg rounded-br-lg w-36 bg-white ${smallMenu ? "scale-100 transition-all duration-500" : "scale-0 origin-top-right rotate-90 transition-all duration-500"}`}>
+            <div
+              className={`absolute top-10 shadow-md shadow-indigo-200 rounded-tl-lg rounded-bl-lg rounded-br-lg w-36 bg-white ${
+                smallMenu ? "scale-100 transition-all duration-500" : "scale-0 origin-top-right rotate-90 transition-all duration-500"
+              }`}
+            >
               <ul className="flex flex-col space-y-2 items-center p-3">
-                <li className="hover:text-white transition-all duration-300 rounded-md hover:shadow hover:bg-indigo-500 px-4 py-1">
-                  <a href="#">Home</a>
-                </li>
-                <li className="hover:text-white transition-all duration-300 rounded-md hover:shadow hover:bg-indigo-500 px-4 py-1">
-                  <a href="#skills">Skills</a>
-                </li>
-                <li className="hover:text-white transition-all duration-300 rounded-md hover:shadow hover:bg-indigo-500 px-4 py-1">
-                  <a href="#projects">Projects</a>
-                </li>
-                <li className="hover:text-white transition-all duration-300 rounded-md hover:shadow hover:bg-indigo-500 px-4 py-1">
-                  <a href="#contact">Contact</a>
-                </li>
+                <NavItem href="#" label="Home" />
+                <NavItem href="#skills" label="Skills" />
+                <NavItem href="#projects" label="Projects" />
+                <NavItem href="#contact" label="Contact" />
               </ul>
             </div>
           </button>
