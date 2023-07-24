@@ -5,22 +5,26 @@
   },
   {
     "id": 2,
-    "image": "/skilvul.png"
+    "image": "/js.png"
   },
   {
     "id": 3,
-    "image": "/deacourse.png"
+    "image": "/skilvul.png"
   },
   {
     "id": 4,
-    "image": "/pcap.png"
+    "image": "/deacourse.png"
   },
   {
     "id": 5,
-    "image": "/cisco.png"
+    "image": "/pcap.png"
   },
   {
     "id": 6,
+    "image": "/cisco.png"
+  },
+  {
+    "id": 7,
     "image": "/codefirst.png"
   }
 ]
