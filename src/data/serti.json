@@ -7,24 +7,28 @@
     "id": 2,
     "image": "/js.png"
   },
-  {
+ {
     "id": 3,
-    "image": "/skilvul.png"
+    "image": "/aws.png"
   },
   {
     "id": 4,
-    "image": "/deacourse.png"
+    "image": "/skilvul.png"
   },
   {
     "id": 5,
-    "image": "/pcap.png"
+    "image": "/deacourse.png"
   },
   {
     "id": 6,
-    "image": "/cisco.png"
+    "image": "/pcap.png"
   },
   {
     "id": 7,
+    "image": "/cisco.png"
+  },
+  {
+    "id": 8,
     "image": "/codefirst.png"
   }
 ]
