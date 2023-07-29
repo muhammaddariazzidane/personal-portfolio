@@ -9,26 +9,30 @@
   },
  {
     "id": 3,
+    "image": "/be.png"
+  },
+ {
+    "id": 4,
     "image": "/aws.png"
   },
   {
-    "id": 4,
+    "id": 5,
     "image": "/skilvul.png"
   },
   {
-    "id": 5,
+    "id": 6,
     "image": "/deacourse.png"
   },
   {
-    "id": 6,
+    "id": 7,
     "image": "/pcap.png"
   },
   {
-    "id": 7,
+    "id": 8,
     "image": "/cisco.png"
   },
   {
-    "id": 8,
+    "id": 9,
     "image": "/codefirst.png"
   }
 ]
