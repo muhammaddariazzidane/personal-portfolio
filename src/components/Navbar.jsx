@@ -14,7 +14,7 @@ export default function Navbar() {
       <header className="p-4 px-10 lg:px-24 shadow-sm">
         <div className="container flex justify-between h-10 mx-auto">
           <div className="flex items-center text-xl">
-            <span className="font-semibold">Muhamad Dariaz Zidane</span>
+            <span className="font-semibold">Muhammad Dariaz Zidane</span>
           </div>
           <ul className="items-stretch hidden space-x-3 lg:flex">
             <NavItem href="#" label="Home" />

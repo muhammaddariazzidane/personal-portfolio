@@ -162,7 +162,7 @@ export default function Skills() {
           <div
             className="w-fit p-3 shadow rounded-full group cursor-pointer"
             data-aos="fade-down-right"
-            data-aos-delay="2500"
+            data-aos-delay="2700"
           >
             <div className="text-cyan-500 flex justify-center ">
               <FaReact

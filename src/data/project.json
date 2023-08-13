@@ -6,7 +6,7 @@
     "image": "/forum.png",
     "link": "https://whyngebull.000webhostapp.com/",
     "repo": "",
-    "tech": ["/laravel.svg", "/mysql.svg", "/tailwindcss_logo_icon_167923.svg"]
+    "tech": ["/laravel.svg", "/tailwindcss_logo_icon_167923.svg", "/mysql.svg"]
   },
   {
     "id": 2,
@@ -15,7 +15,11 @@
     "image": "/blog.png",
     "link": "https://muhammaddariazzidane-blog.000webhostapp.com/",
     "repo": "",
-    "tech": ["/codeigniter_logo_icon_145394.svg", "/mysql.svg", "/tailwindcss_logo_icon_167923.svg"]
+    "tech": [
+      "/codeigniter_logo_icon_145394.svg",
+      "/tailwindcss_logo_icon_167923.svg",
+      "/mysql.svg"
+    ]
   },
   {
     "id": 3,
@@ -24,6 +28,10 @@
     "image": "/tambaksari.png",
     "link": "https://desa-tambaksari.000webhostapp.com/",
     "repo": "",
-    "tech": ["/codeigniter_logo_icon_145394.svg", "/mysql.svg", "/bootstrap.svg"]
+    "tech": [
+      "/codeigniter_logo_icon_145394.svg",
+      "/bootstrap.svg",
+      "/mysql.svg"
+    ]
   }
 ]

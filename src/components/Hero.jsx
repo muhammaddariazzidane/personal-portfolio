@@ -64,7 +64,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="lg:w-1/2 w-full lg:block md:block hidden">
+      <div className="lg:w-1/2 w-full ">
         <LazyLoadImage
           src="/new_formal.png"
           alt="/"
