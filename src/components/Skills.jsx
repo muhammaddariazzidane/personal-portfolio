@@ -14,6 +14,7 @@ import {
   SiCodeigniter,
   SiMysql,
   SiAlpinedotjs,
+  SiGit,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -166,6 +167,18 @@ export default function Skills() {
           >
             <div className="text-cyan-500 flex justify-center ">
               <FaReact
+                className="group-hover:scale-125  transition-all duration-500"
+                size={60}
+              />
+            </div>
+          </div>
+          <div
+            className="w-fit p-3 shadow rounded-full group cursor-pointer"
+            data-aos="fade-down-right"
+            data-aos-delay="2900"
+          >
+            <div className="text-red-500 flex justify-center ">
+              <SiGit
                 className="group-hover:scale-125  transition-all duration-500"
                 size={60}
               />

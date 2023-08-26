@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Loader from "./utils/Loader";
+const Home = React.lazy(() => import("./pages/Home"));
 
 export default function App() {
   useEffect(() => {
@@ -12,7 +13,14 @@ export default function App() {
   }, []);
   return (
     <Routes>
-      <Route path={"/"} element={<Home />} />
+      <Route
+        path={"/"}
+        element={
+          <Suspense fallback={<Loader />}>
+            <Home />
+          </Suspense>
+        }
+      />
     </Routes>
   );
 }
